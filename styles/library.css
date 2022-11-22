@@ -1,0 +1,41 @@
+.section {
+    display: grid;
+    background-color: #1D3C60;
+}
+
+.background {
+    position: center;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.background img {
+    width: 80em;
+}
+
+.inner-cont-title {
+    color: white;
+    background-color: red;
+    text-align: left;
+    width: 10%;
+    visibility: inherit;
+    transform: translate3d(270px, -530px, 0px);
+    padding: 10px;
+}
+
+.inner-cont {
+    color: #CDCDCD;
+    padding: 10px;
+    background-color: #1D3C60;
+    text-align: left;
+    max-width: 960px;
+    transform: translate3d(315px, -530px, 0px);
+
+}
+
+.inner-cont a{
+    text-decoration: none;
+    color: #CDCDCD;
+
+}

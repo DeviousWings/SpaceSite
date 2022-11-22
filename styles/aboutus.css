@@ -1,0 +1,12 @@
+.about {
+    color: #CDCDCD;
+    background-color: #1D3C60;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 5px solid white;
+}
+
+
+.about h3 {
+    color: #CDCDCD;
+}
