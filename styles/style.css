@@ -245,7 +245,7 @@ footer p a:hover {
 .news-grid {
   display: grid;
   grid-template-columns: repeat(8, 25%);
-  grid-auto-rows: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
   background-color: #1D3C60;
   border-bottom: 5px solid white;
   padding: 45px;
@@ -438,7 +438,6 @@ footer p a:hover {
 }
 
 .background {
-  position: center;
   height: auto;
   width: 100%;
   padding: 20px;
@@ -583,7 +582,6 @@ form {
     text-decoration: none;
     font-size: 15px;
     padding: 15px;
-    margin-top: 1 0px;
     border-radius: 5px;
     font-family: 'RocknRoll One', 'Roboto', 'Georgia', sans-serif;
   }

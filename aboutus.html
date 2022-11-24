@@ -24,6 +24,7 @@
                 <a href="site-plan-space.html">Site Plan</a>
             </nav>
         </header>
+    </div>
     <div class="about">
         <h3>Purpose</h3>
         <p>This site will allow you to easily browse each topic of everything dealing with space, physics, and science
@@ -99,9 +100,9 @@
 
     <section>
         <div id="feedback"></div>
-        
 
-        
+
+
         <img id="hero-mount" src="images/spaceman.jpg" alt="background">
         <form action="/my-handling-form-page" method="post">
             <h2>Feel free to Contact us</h2>
@@ -122,7 +123,7 @@
                     <button type="submit">Send your message</button>
                 </li>
             </ul>
-  
+
         </form>
 
         <script>
@@ -131,11 +132,12 @@
             // get the form so we can read what was entered in it.
             const formElement = document.forms[0];
             // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function(e) {
+            formElement.addEventListener('submit', function (e) {
                 // stop the form from doing the default action.
                 e.preventDefault();
                 // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                    '! Thank you for your message. We will get back with you as soon as possible!';
                 // make the feedback element visible.
                 feedbackElement.style.display = "block";
                 // add a class to move everything down so our message doesn't cover it.
@@ -151,5 +153,6 @@
         <a href="site-plan-space.html">Site Plan</a>
     </footer>
 </body>
+
 
 </html>
