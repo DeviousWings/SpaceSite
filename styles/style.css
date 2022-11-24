@@ -226,11 +226,16 @@ footer p a:hover {
 }
 
 #hero-msg {
+  opacity: .5;
   text-align: center;
   grid-column: 2/3;
   grid-row: 1/2;
   margin: 100px;
   background-color: #1D3C60;
+}
+
+#hero-msg:hover {
+  opacity: 1.0;
 }
 
 #hero-img {
