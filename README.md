@@ -1,3 +1,5 @@
+<h3>Purose</h3>
+
 <p>The purpose of this site is to have a Library of Alexandria of Space Exploration. The technologies, the science,
     the theories and their timelines of discovery and lifetime. We will be going place to place to each space project
     to show what is being studied and the discoveries that they are making. Documenting what the top companies are
@@ -34,3 +36,46 @@
     actual library of books of studies, theories, research and physical items like rockets, habitats, and future
     technologies that will progress our desires to explore and understand deep space.
 </p>
+
+ <h3>What you will find</h3>
+        <p>The information that is necessary to complete any actions on this site will be all the data, no opinions
+            (unless
+            it is in a theories boards). As such, the greatest and most controversial topic is climate change. When you
+            put
+            in any data about the changing climate, you must also put the data “outside” the normal studies. Such as
+            what
+            was the sun doing, the electromagnetic galactic sheet, the magnetic field of the earth. This site will not
+            blame
+            humans or one chemical for the problems that arise, in such formats as climate change and the controversy
+            from
+            it. If you say the earth will flood, you must have the data to back that up. This is for research, this is
+            for
+            information, this is for understanding the world around us. Meaning if your information conflicts with the
+            known, not the theory, rules of nature, (physics, biology, chemistry, etc.) it will be considered wrong and
+            non-information. It will not be excepted on the site.
+        </p>
+        <p>
+            We are a site of information, not opinion or “humans are the disease” type scenarios. We will seek only pure
+            truth. Pure facts. Nothing less will suffice.
+        </p>
+        <p>
+            We hope visitors will come to our site for the fact we will not play a bios, political game to get funding,
+            affirm your opinions, or play to the dooms day of death. No altering information for you views. Until the
+            information is cross examined by multiple sources, it will not be fact. It will be hard for information to
+            be
+            fact, but we do not want to have false information that causes nothing but strife. This will be the place
+            where
+            even those who do not study this field will be able to understand it. If a dooms day is every predicted on
+            this
+            site, it is because of the facts and pure truth of the data that was collected and studied. Until proven
+            otherwise, everything is a theory and what is already known, and truth is already proven to be fact. You can
+            study what is already known and add to the known, but that does not change the truth of the known or facts.
+            Science is allowed to be questions. Time goes on and things will change.
+        </p>
+        <p>
+            Earth, the Sun, Mars, and the cosmos is in an eternal change as time goes by, just like us humans are. We
+            are
+            the recorders of that change. The scribes of the cosmos. Understanding what we see around us to be better
+            stewards and rulers of the world and cosmos. As we are a religious base minded researcher group, we believe
+            science is not to push the boundaries of God, but to understand the boundaries set for us. To understand the
+            stewardship He has granted us.
