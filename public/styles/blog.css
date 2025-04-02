@@ -1,0 +1,29 @@
+.blog-posts {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  #posts {
+    margin-top: 1.5em;
+    display: grid;
+    gap: 1.2em;
+  }
+  
+  .post-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 6px;
+  }
+  
+  .post-card a {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .post-card a:hover {
+    text-decoration: underline;
+  }
+  
