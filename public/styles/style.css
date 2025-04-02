@@ -1,0 +1,700 @@
+:root {
+  --primary-color: #545454;
+  --secondary-color: #1D3C60;
+  --accent1-color: #CDCDCD;
+  --accent2-color: #988978;
+
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Fira Sans";
+  --paragraph-font: 'Fira Sans', 'Ubuntu', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #545454;   /* headlines on a white background */
+  --headline-color-on-color: white;   /* headlines on a colored background */
+  --paragraph-color-on-white: #545454;  /* paragraph text on a white background */
+  --paragraph-color-on-color: white;   /* paragraph text on a colored background */
+  --paragraph-background-color: #545454;
+  --nav-link-color: #545454;
+  --nav-background-color: #CDCDCD;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #545454;
+}
+
+/* For Entire page */
+/* img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  /* color: white; */
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  /* color: white; */
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+  /* color: white; */
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+  /* color: white; */
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  background-color: #545454;
+  font-family: 'Fira Sans', 'Ubuntu', sans-serif;
+
+}
+
+/* Top */
+header {
+  background-color: #CDCDCD;
+  font-family: 'Fira Sans', 'Ubuntu', sans-serif;
+  display: grid;
+  grid-template-columns: 150px auto;
+  align-items: center;
+  
+}
+
+.logo {
+  width: 150px;
+  position: relative;
+}
+#logo_link {
+  width: 190px;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-align: center;
+  color: #545454;
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  font-size: 1.2em;
+
+
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* Slidshow */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  background-color: #1D3C60;
+  margin-top: 0%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  /* position: absolute; */
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+footer {
+  border-top: 4px solid #FFFFFF;
+  background-color: #1D3C60;
+  color: #CDCDCD;
+  padding: 25px 50px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p {
+    color:#CDCDCD;
+}
+
+footer a {
+  color: #CDCDCD;
+  text-decoration: none;
+
+}
+
+footer,
+.social
+img {
+  padding-top: 15px;
+  max-width: 100%;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer a:hover {
+  color: #FFFFFF;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+
+.home-title {
+  color: #CDCDCD;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -50px;
+
+}
+
+#hero-msg h1,
+#hero-msg h4 {
+  text-align: center;
+}
+
+#hero-msg section {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#hero-msg h4 {
+  color: white;
+}
+
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#hero-msg {
+  opacity: .5;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 100px;
+  background-color: #1D3C60;
+}
+
+#hero-msg:hover {
+  opacity: 1.0;
+}
+
+#hero-img {
+  width: 100%;
+}
+
+#hero-msg h4 {
+  color: white;
+}
+
+/* Middle */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 25%);
+  grid-template-rows: repeat(4, 25%);
+  background-color: #1D3C60;
+  border-bottom: 5px solid white;
+  padding: 45px;
+}
+
+.news-grid .news-title {
+  grid-column: 2/4;
+  grid-row: 1;
+  margin: 0 -6.5px;
+  /* Design */
+  background-color: #1D3C60;
+  color: white;
+  text-align: center;
+  margin: 5px;
+  font-size: 40px;
+  font-family: 'Fira Sans', 'Ubuntu', sans-serif;
+}
+
+/* news-post is entire news grid*/
+.news-grid .news-post {
+  display: grid;
+  grid-row: 2;
+
+}
+
+/* Events block */
+.events {
+  display: block;
+  background-color: #CDCDCD;
+  font-family: 'Fira Sans', 'Ubuntu', sans-serif;
+
+  background-clip: content-box;
+
+  grid-column: 2/4;
+  grid-row: 1;
+  margin: 100px;
+  height: auto;
+
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.events h2 {
+  margin: auto;
+  color: #1D3C60;
+  margin: 0;
+  padding-top: 8px;
+  font-family: 'Fira Sans', 'Ubuntu', sans-serif;
+
+  border-bottom: 5px solid #545454;
+
+}
+
+.events .text {
+  margin: 10px;
+
+}
+
+.events a {
+  text-decoration: none;
+  color: #1D3C60;
+}
+
+/* Each post */
+.inner1 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+
+}
+
+.inner2 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+
+}
+/* inner is each news post */
+.inner3 {
+  grid-row: 5/6;
+  grid-row: 3/4;
+}
+
+.inner4 {
+  grid-row: 6/7;
+  grid-row: 3/4;
+
+}
+
+.news-post .inner {
+  background-color: #CDCDCD;
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.news-post .inner:hover {
+  background-color: #545454;
+}
+
+/* fauxcrop is each news element */
+.news-post .post {
+  height: 180px;
+  overflow: hidden;
+}
+
+.news-post .post img {
+  width: 300px;
+}
+
+.news-content {
+  display: table;
+  padding: 30px 0 28px;
+}
+
+.news-content span {
+  font-size: 16px;
+  background-color: #1D3C60;
+  color: #CDCDCD;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+  padding: 10px;
+}
+
+/* Main Focus */
+#focus {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  background-color: #1D3C60;
+  border-bottom: 5px solid white;
+  font-family: 'Fira Sans', 'Ubuntu', sans-serif;
+
+}
+
+.focus-title {
+  color:white;
+  background-color:#545454;
+  grid-column: 2/3;
+  grid-row: 1/1;
+  padding: 20px
+
+}
+
+#focus-box {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+#focus-img {
+  width: 100%;
+}
+
+#focus-cont section {
+  color: white;
+  grid-column: 2/3;
+  /* grid-row: 2/3; */
+}
+
+#focus-cont {
+  text-align: left;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-left: 100px;
+  margin-bottom: 300px;
+}
+
+#focus-cont p {
+  /* margin-bottom: 300px; */
+  color: white;
+  background-color: #1D3C60;
+}
+
+#focus-cont a {
+  color: white;
+  background-color: #1D3C60;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+/* Library */
+
+.section {
+  display: grid;
+  background-color: #1D3C60;
+}
+
+.background {
+  height: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.background img {
+  width: 80em;
+}
+
+.inner-cont-title {
+  color: white;
+  background-color: red;
+  text-align: left;
+  width: 10%;
+  visibility: inherit;
+  transform: translate3d(270px, -530px, 0px);
+  padding: 10px;
+}
+
+.inner-cont {
+  color: #CDCDCD;
+  padding: 10px;
+  background-color: #1D3C60;
+  text-align: left;
+  max-width: 960px;
+  transform: translate3d(315px, -530px, 0px);
+
+}
+
+.inner-cont a{
+  text-decoration: none;
+  color: #CDCDCD;
+
+}
+
+/* About */
+.about {
+  color: #CDCDCD;
+  background-color: #1D3C60;
+  text-align: left;
+  padding: 20px;
+  border-bottom: 5px solid white;
+}
+
+
+.about h3 {
+  color: #CDCDCD;
+}
+/* Form */
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  color:#CDCDCD;
+}
+
+section h2 {
+  color: #CDCDCD
+}
+
+#hero-mount {
+  margin-top: 0px;
+  width: 100%;
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+form {
+    /* Center the form on the page */
+    margin: 300px auto;
+    width: 500px;
+    height: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CDCDCD;
+    border-radius: 1em;
+    background-color: #1D3C60;
+    grid-row: 1/1;
+    grid-column: 1/1;
+
+}
+  
+  #hero-mount {
+    width: 100%;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 40px auto;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 3.5em;
+    background-color: #CDCDCD;
+    color: #1D3C60;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'RocknRoll One', 'Roboto', 'Georgia', sans-serif;
+  }
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;     
+}
+.moveDown {
+    margin-top: 3em;
+}
+     
