@@ -70,6 +70,14 @@ Welcome to the official development roadmap for **The Cosmos Library**, a person
 - [Skyfield.js](https://rhodesmill.org/skyfield/) for astronomical calculations
 - [Open Meteo](https://open-meteo.com/) for weather/cloud cover predictions
 
+## 🔐 Environment Variables
+
+To use the NASA API, create a `.env` file in the root of your project with the following:
+
+```env
+NASA_API_KEY=your_api_key_here
+
+
 **Add Features:**
 - Interactive moon phase tracker
 - Telescope session logger with filters
