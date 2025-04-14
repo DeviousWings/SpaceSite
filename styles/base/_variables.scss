@@ -1,0 +1,23 @@
+:root {
+    --bg: #0b0c2a;
+    --primary: #e63946;
+    --accent: #a8dadc;
+    --text-light: #f1f1f1;
+    --text-muted: #cccccc;
+    --font-main: 'Lato', sans-serif;
+
+    --headline-color-on-white: #0b0c2a;       /* dark text for light backgrounds */
+    --headline-color-on-color: #f1f1f1;       /* light text for dark sections */
+    
+    --paragraph-color-on-white: #333333;      /* slightly lighter than black for better readability */
+    --paragraph-color-on-color: #f1f1f1;      /* same as text-light for dark backgrounds */
+  
+    --paragraph-background-color: #181a2f;    /* slightly lighter than --bg, creates depth contrast */
+  
+    --nav-link-color: #f1f1f1;                /* white text for links */
+    --nav-background-color: #121232;          /* deep navy/black for nav background */
+    --nav-hover-link-color: #a8dadc;          /* uses accent color on hover */
+    --nav-hover-background-color: #1f1f3c;    /* subtle shade change on hover */
+  }
+
+  

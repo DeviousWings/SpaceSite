@@ -1,111 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-
-
-    <title>Cosmos Library | Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <title>Cosmos Library | Home</title>
 </head>
 
 <body>
-    <div class="content">
-        <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/space_rd.jpg" alt="Space Logo">
-            </a>
-            <nav>
-                <a href="index.html" alt="home">Home</a>
-                <a href="blog.html" alt="blog">Blog</a>
-                <a href="library.html" alt="library">Library</a>
-                <a href="aboutus.html"alt="about">About Us</a>
-            </nav>
-        </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/nightSky.jpg" alt="Pillars of Creation MIRI Image">
-            </div>
-            <section id="hero-msg">
-                <h1 class="home-title">The Cosmos Library</h1>
-                <h2>Exploring the universe, one post at a time.</h2>
-            </section>
-<button id="hero-btn"><a href="blog.html">Explore</a></button>
-<button id="hero-btn2"><a href="library.html">Start Exploring</a></button>
+  <header>
+    <a id="logo_link" href="index.html">
+      <img class="logo" src="images/space_rd.jpg" alt="Cosmos Library Logo" />
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="library.html">Library</a>
+      <a href="aboutus.html">About Me</a>
+    </nav>
+  </header>
 
-        </div>
-        <section class="news-grid">
-            <div class="news-title">Most Exciting Posts</div>
-            <section class="events">
-
-                <!-- I will do a javascrip to add Blog posts from Substack  -->
-
-            </section>
-
-            <div class="news-post">
-                <div class="inner inner1">
-                    <div class="post">
-                        <img alt="moonbase" src="images/moonbase.jpg">
-                    </div>
-                    <div class="news-content">
-                        <span>Moonbase</span>
-                    </div>
-                </div>
-
-                <div class="inner inner2">
-                    <div class="post">
-                        <img alt="jupiter" src="images/jupiter.jpg">
-                    </div>
-                    <div class="news-content">
-                        <span>Jupiter Exploration</span>
-                    </div>
-                </div>
-
-                <div class="inner inner3">
-                    <div class="post">
-                        <img alt="spacex" src="images/spacexSat.jpg">
-                    </div>
-                    <div class="news-content">
-                        <span>SpaceX Satilite</span>
-                    </div>
-                </div>
-
-                <div class="inner inner4">
-                    <div class="post">
-                        <a href="https://www.sierraspace.com/space-destinations/life-space-habitat/">
-                            <img alt="lifehab" src="images/lifehab.jpg">
-                        </a>
-                    </div>
-                    <div class="news-content">
-                        <span>Sierra Space Lifehab</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div id="focus">
-            <h2 class="focus-title">Main Focus Study</h2>
-            <div id="focus-box">
-                <img id="focus-img" alt="safire" src="images/safire.jpg">
-            </div>
-            <section id="focus-cont">
-                <p>The SAFIRE laboratory has been completed and fully commissioned. Through 2017 the SAFIRE team
-                    performed numerous experiments. Many discoveries were made. Some of these discoveries were
-                    startling.</p>
-                <a href="https://safireproject.com/film/story.html">Safire Project</a>
-            </section>
-        </div>
-        <br>
-        <footer>
-            <p>The Cosmos Library &copy; 2022 - Nathanael King WDD130-09</p>
-            <a href="index.html">Home</a>
-            <a href="library.html">Library</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="site-plan-space.html">Site Plan</a>
-        </footer>
+  <section id="hero">
+    <div id="hero-box">
+      <img id="hero-img" src="images/nightSky.jpg" alt="Pillars of Creation" />
     </div>
+    <div id="hero-msg">
+      <h1 class="home-title">The Cosmos Library</h1>
+      <h2>Exploring the universe, one post at a time.</h2>
+      <div class="hero-buttons">
+        <a href="blog.html" class="hero-btn">Read the Blog</a>
+        <a href="library.html" class="hero-btn">Browse the Library</a>
+      </div>
+    </div>
+  </section>
 
+  <section class="section-preview">
+    <h2>🔭 Featured Posts</h2>
+    <div class="post-grid">
+      <div class="post-card">
+        <img src="images/moonbase.jpg" alt="Moonbase" />
+        <h3>Moonbase Log</h3>
+      </div>
+      <div class="post-card">
+        <img src="images/jupiter.jpg" alt="Jupiter" />
+        <h3>Jupiter Observation</h3>
+      </div>
+      <div class="post-card">
+        <img src="images/spacexSat.jpg" alt="SpaceX Satellite" />
+        <h3>Starlink Watch</h3>
+      </div>
+      <div class="post-card">
+        <a href="https://www.sierraspace.com/space-destinations/life-space-habitat/">
+          <img src="images/lifehab.jpg" alt="Sierra Space LifeHab" />
+        </a>
+        <h3>Sierra Space LifeHab</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-focus">
+    <h2>🧪 Main Focus Study</h2>
+    <div class="focus-content">
+      <img src="images/safire.jpg" alt="SAFIRE Project" />
+      <div class="focus-description">
+        <p>The SAFIRE team has completed numerous plasma experiments with fascinating implications for cosmology.</p>
+        <a href="https://safireproject.com/film/story.html">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional Substack/JS-injected Section -->
+  <section id="substack-feed">
+    <h2>📬 Latest Blog Posts</h2>
+    <div id="substack-posts"><!-- Injected by JavaScript later --></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Cosmos Library – Nathanael King</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="library.html">Library</a>
+      <a href="aboutus.html">About Me</a>
+      <a href="site-plan-space.html">Site Plan</a>
+    </nav>
+  </footer>
 </body>
-
 </html>

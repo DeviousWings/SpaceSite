@@ -125,3 +125,27 @@ For questions or help contributing, please reach out via the site’s contact pa
 - [] Fix home page
     - [] News area
     - [] Main Story
+
+styles/
+├── main.scss            ← Main entry point (imports everything)
+│
+├── base/
+│   ├── _variables.scss   ← Colors, fonts, sizes – used across all files
+│   ├── _typography.scss  ← Headings, body text, font rules
+│   ├── _reset.scss       ← CSS reset to normalize styles across browsers
+│
+├── layout/
+│   ├── _header.scss      ← Styles for the header AND navigation bar
+│   ├── _footer.scss      ← Styles for footer section
+│   ├── _responsive.scss  ← Media queries for mobile/tablet responsiveness
+│
+├── sections/
+│   ├── _hero.scss        ← Hero banner section styling (main title + buttons)
+│   ├── _posts.scss       ← Styling for featured post cards/grid
+│   ├── _focus.scss       ← Special highlight content (e.g. SAFIRE project)
+│
+├── pages/
+│   ├── _home.scss        ← Page-specific overrides/styles for index.html
+│   ├── _blog.scss        ← Styles specific to blog.html
+│   ├── _library.scss     ← Styles specific to library.html
+│   ├── _about.scss       ← Styles specific to aboutus.html
