@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Space Blog</title>
-  <script src="js/scripts.js" defer></script>
+  <!-- <script src="js/scripts.js" defer></script> -->
   <link rel="stylesheet" href="styles/main.css" />
+  <script src="scripts/blog.js" defer></script>
 
   <!-- <link rel="stylesheet" href="styles/style.css" /> -->
   <!-- <link rel="stylesheet" href="styles/blog.css" /> -->
@@ -25,10 +26,13 @@
   </header>
 
   <main>
-    <section class="blog-posts">
-      <h2>Latest from Substack</h2>
-      <div id="posts">Loading blog posts...</div>
+    <section id="blog-feed">
+      <h2>🛰️ Space Blog Posts</h2>
+      <div id="blog-posts"><!-- JS injects here --></div>
     </section>
+    
+    <script src="scripts/blog.js"></script>
+    
   </main>
 
   <footer>

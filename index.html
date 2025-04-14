@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/main.css" />
+
   <title>Cosmos Library | Home</title>
 </head>
 
@@ -42,8 +43,10 @@
         <h3>Moonbase Log</h3>
       </a>
       <div class="post-card">
-        <img src="images/comercialSpace.jpg" alt="My own ideas for space Exploration" />
-        <h3>My ideas for Space Exploration</h3>
+        <a href="https://safireproject.com/film/story.html">
+        <img src="images/safire.jpg" alt="SAFIRE Project" />
+        <h3>SAFIRE Project</h3>
+      </a>
       </div>
       <div class="post-card">
         <img src="images/spacex-mars-base.jpg" alt="SpaceX Mission Mars Base" />
@@ -52,22 +55,34 @@
       <div class="post-card">
         <a href="https://www.sierraspace.com/space-destinations/life-space-habitat/">
           <img src="images/lifehab.jpg" alt="Sierra Space LifeHab" />
+          <h3>Sierra Space LifeHab</h3>
         </a>
-        <h3>Sierra Space LifeHab</h3>
       </div>
     </div>
   </section>
+  <section class="main-focus-slider">
+    <h2>🧪 My Ideas for Space Exploration</h2>
+    <div class="slider">
+      <div class="slide active">
+        <img src="images/oribtal-space yard.png" alt="Shipyard concept">
+        <h3>Orbital Shipyards</h3>
+        <p>Concept for high-orbit modular spacecraft assembly platforms.</p>
+      </div>
+      <div class="slide">
+        <img src="images/lunar-base.png" alt="Colony base">
+        <h3>Lunar Resource Stations</h3>
+        <p>Mining and refining materials on the Moon to support Mars missions.</p>
+      </div>
+      <!-- Add more slides -->
+    </div>
+    <div class="slide-controls">
+      <button id="prevSlide">⟵</button>
+      <button id="nextSlide">⟶</button>
+    </div>
+    <a href="blog.html" class="btn">Learn More</a>
 
-  <section class="main-focus">
-    <h2>🧪 Main Focus Study</h2>
-    <div class="focus-content">
-      <img src="images/safire.jpg" alt="SAFIRE Project" />
-      <div class="focus-description">
-        <p>The SAFIRE team has completed numerous plasma experiments with fascinating implications for cosmology.</p>
-        <a href="https://safireproject.com/film/story.html">Learn More</a>
-      </div>
-    </div>
   </section>
+  
 
   <!-- Optional Substack/JS-injected Section -->
   <section id="substack-feed">
@@ -84,5 +99,7 @@
       <a href="site-plan-space.html">Site Plan</a>
     </nav>
   </footer>
+  <script src="scripts/main.js"></script>
+
 </body>
 </html>

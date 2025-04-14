@@ -1,78 +1,78 @@
-// @media (max-width: 768px) {
-//     header {
-//       flex-direction: column;
-//       align-items: center;
-//       text-align: center;
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   
-//       nav {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 0.5em;
-//         margin-top: 1em;
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin-top: 1em;
   
-//         a {
-//           font-size: 1.1rem;
-//         }
-//       }
+        a {
+          font-size: 1.1rem;
+        }
+      }
   
-//       .logo {
-//         height: 50px;
-//         margin-bottom: 0.5em;
-//       }
-//     }
+      .logo {
+        height: 50px;
+        margin-bottom: 0.5em;
+      }
+    }
   
-//     #hero {
-//       padding: 2em 1em;
+    #hero {
+      padding: 2em 1em;
   
-//       h1 {
-//         font-size: 2rem;
-//       }
+      h1 {
+        font-size: 2rem;
+      }
   
-//       h2 {
-//         font-size: 1.2rem;
-//       }
+      h2 {
+        font-size: 1.2rem;
+      }
   
-//       .hero-buttons {
-//         flex-direction: column;
-//         gap: 0.75em;
+      .hero-buttons {
+        flex-direction: column;
+        gap: 0.75em;
   
-//         a {
-//           padding: 0.6em 1.2em;
-//         }
-//       }
+        a {
+          padding: 0.6em 1.2em;
+        }
+      }
   
-//       #hero-img {
-//         width: 100%;
-//         height: auto;
-//       }
-//     }
+      #hero-img {
+        width: 100%;
+        height: auto;
+      }
+    }
   
-//     .post-grid {
-//       grid-template-columns: 1fr !important; // stack cards on small screens
-//       gap: 1em;
-//     }
+    .post-grid {
+      grid-template-columns: 1fr !important; // stack cards on small screens
+      gap: 1em;
+    }
   
-//     .main-focus .focus-content {
-//       flex-direction: column;
+    .main-focus .focus-content {
+      flex-direction: column;
   
-//       img {
-//         max-width: 90%;
-//       }
+      img {
+        max-width: 90%;
+      }
   
-//       .focus-description {
-//         text-align: center;
-//       }
-//     }
+      .focus-description {
+        text-align: center;
+      }
+    }
   
-//     footer {
-//       font-size: 0.9rem;
-//       padding: 1em;
+    footer {
+      font-size: 0.9rem;
+      padding: 1em;
   
-//       nav {
-//         flex-direction: column;
-//         gap: 0.25em;
-//         margin-top: 0.5em;
-//       }
-//     }
-//   }
+      nav {
+        flex-direction: column;
+        gap: 0.25em;
+        margin-top: 0.5em;
+      }
+    }
+  }
   
