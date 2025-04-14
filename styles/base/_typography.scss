@@ -1,0 +1,49 @@
+/* styles/base/_typography.scss */
+
+body {
+    font-family: var(--font-main);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--bg);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--headline-color-on-color);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-top: 1.5em;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 1.25em;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: var(--paragraph-color-on-color);
+    margin-bottom: 1em;
+  }
+  
+  a {
+    color: var(--accent);
+    transition: 0.3s ease;
+  
+    &:hover {
+      color: var(--primary);
+    }
+  }
+  
+  strong {
+    font-weight: 600;
+  }
+  

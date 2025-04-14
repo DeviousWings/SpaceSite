@@ -22,6 +22,7 @@ Welcome to the official development roadmap for **The Cosmos Library**, a person
 - [ ] Create sections: Hero, Featured Posts, Focus Study, Substack Feed
 - [ ] Add JavaScript for dynamic content injection
 - [ ] Setup continuous deployment via GitHub → Netlify
+- [ ] Music in the background?
 
 ---
 
