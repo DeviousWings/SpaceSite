@@ -79,3 +79,37 @@ body {
     }
   }
 }
+
+
+#substack-preview {
+  padding: 2em;
+  background-color: #121232;
+  color: var(--text-light);
+
+  h2 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .substack-card {
+    background: #1a1b3c;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+
+    h3 a {
+      color: var(--accent);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    p {
+      margin: 0.5em 0;
+      color: var(--text-muted);
+    }
+  }
+}

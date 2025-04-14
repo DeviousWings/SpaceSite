@@ -388,6 +388,34 @@ body {
   font-weight: bold;
 }
 
+#substack-preview {
+  padding: 2em;
+  background-color: #121232;
+  color: var(--text-light);
+}
+#substack-preview h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1em;
+}
+#substack-preview .substack-card {
+  background: #1a1b3c;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+#substack-preview .substack-card h3 a {
+  color: var(--accent);
+  text-decoration: none;
+}
+#substack-preview .substack-card h3 a:hover {
+  color: var(--primary);
+}
+#substack-preview .substack-card p {
+  margin: 0.5em 0;
+  color: var(--text-muted);
+}
+
 #blog-feed {
   padding: 2em;
 }
