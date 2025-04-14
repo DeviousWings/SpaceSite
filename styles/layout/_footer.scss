@@ -1,0 +1,17 @@
+footer {
+    background: #121232;
+    text-align: center;
+    padding: 1em;
+    color: var(--text-muted);
+  
+    nav a {
+      color: var(--text-muted);
+      margin: 0 1em;
+      text-decoration: none;
+  
+      &:hover {
+        color: var(--text-light);
+      }
+    }
+  }
+  

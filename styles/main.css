@@ -100,13 +100,54 @@ a {
   color: inherit;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: #121232;
+  border-bottom: 2px solid var(--primary);
+}
+header nav a {
+  color: var(--text-light);
+  margin-left: 1em;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: var(--accent);
+}
+header .logo {
+  height: 60px;
+  border-radius: 10px;
+}
+
+footer {
+  background: #121232;
+  text-align: center;
+  padding: 1em;
+  color: var(--text-muted);
+}
+footer nav a {
+  color: var(--text-muted);
+  margin: 0 1em;
+  text-decoration: none;
+}
+footer nav a:hover {
+  color: var(--text-light);
+}
+
 #hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 10em 1em;
   background: url("../images/nightSky.jpg") no-repeat center center/cover;
+}
+#hero > * {
+  position: relative;
+  z-index: 1;
 }
 #hero h1 {
   font-size: 3rem;
@@ -121,6 +162,8 @@ a {
 #hero .hero-buttons {
   display: flex;
   gap: 1em;
+  align-items: center;
+  justify-content: center;
 }
 #hero .hero-buttons a {
   background: var(--accent);
@@ -141,27 +184,6 @@ body {
   font-family: var(--font-main);
   margin: 0;
   padding: 0;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
-  background: #121232;
-  border-bottom: 2px solid var(--primary);
-}
-header nav a {
-  color: var(--text-light);
-  margin-left: 1em;
-  text-decoration: none;
-}
-header nav a:hover {
-  color: var(--accent);
-}
-header .logo {
-  height: 60px;
-  border-radius: 10px;
 }
 
 .section-preview {
@@ -224,19 +246,4 @@ header .logo {
 .main-focus .focus-content .focus-description a {
   color: var(--accent);
   font-weight: bold;
-}
-
-footer {
-  background: #121232;
-  text-align: center;
-  padding: 1em;
-  color: var(--text-muted);
-}
-footer nav a {
-  color: var(--text-muted);
-  margin: 0 1em;
-  text-decoration: none;
-}
-footer nav a:hover {
-  color: var(--text-light);
 }/*# sourceMappingURL=main.css.map */
