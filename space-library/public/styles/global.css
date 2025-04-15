@@ -1,0 +1,62 @@
+:root {
+    --bg: #0b0c2a;
+    --primary: #e63946;
+    --accent: #a8dadc;
+    --text-light: #f1f1f1;
+    --text-muted: #cccccc;
+    --font-main: 'Lato', sans-serif;
+
+    --headline-color-on-white: #0b0c2a;       /* dark text for light backgrounds */
+    --headline-color-on-color: #f1f1f1;       /* light text for dark sections */
+    
+    --paragraph-color-on-white: #333333;      /* slightly lighter than black for better readability */
+    --paragraph-color-on-color: #f1f1f1;      /* same as text-light for dark backgrounds */
+  
+    --paragraph-background-color: #181a2f;    /* slightly lighter than --bg, creates depth contrast */
+  
+    --nav-link-color: #f1f1f1;                /* white text for links */
+    --nav-background-color: #121232;          /* deep navy/black for nav background */
+    --nav-hover-link-color: #a8dadc;          /* uses accent color on hover */
+    --nav-hover-background-color: #1f1f3c;    /* subtle shade change on hover */
+  }
+
+
+/* src/styles/global.css */
+
+/* Base styles and reset */
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg, #0b0c2a);
+    color: var(--text-light, #f1f1f1);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Reusable button style */
+  .btn {
+    display: inline-block;
+    background-color: var(--accent, #a8dadc);
+    color: var(--bg, #0b0c2a);
+    padding: 0.75em 1.5em;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--primary, #e63946);
+    color: var(--text-light, #f1f1f1);
+  }
+  

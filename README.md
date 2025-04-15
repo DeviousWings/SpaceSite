@@ -18,11 +18,13 @@ Welcome to the official development roadmap for **The Cosmos Library**, a person
 - Deploy to Netlify using GitHub integration
 
 **Tasks:**
-- [ ] Organize homepage layout for blog and library focus
+- [x] Organize homepage layout for blog and library focus
 - [x] Create sections: Hero, Featured Posts, Focus Study, Substack Feed
-- [ ] Add JavaScript for dynamic content injection
+- [x] Add JavaScript for dynamic content injection
 - [x] Setup continuous deployment via GitHub → Netlify
-- [ ] Music in the background?
+- [] Music in the background?
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)](https://app.netlify.com/sites/YOUR_SITE_NAME/deploys)
 
 ---
 

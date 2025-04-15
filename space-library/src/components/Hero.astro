@@ -1,0 +1,74 @@
+---
+// You can pass props later if needed
+---
+
+<section id="hero" aria-label="Night sky with stars">
+  <div id="hero-msg">
+   <h1 class="text-4xl text-accent font-bold">The Cosmos Library</h1>
+
+    <h2>Exploring the universe, one post at a time.</h2>
+    <div class="hero-buttons">
+      <a href="/blog" class="btn">Read the Blog</a>
+      <a href="/library" class="btn">Browse the Library</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  #hero {
+    background: url('/images/nightSky.jpg') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10em 1em;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  #hero > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .home-title {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 0.3em;
+  }
+
+  #hero h2 {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 1em;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 0.75em 1.5em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .btn:hover {
+    background: var(--primary);
+    color: var(--text-light);
+  }
+</style>

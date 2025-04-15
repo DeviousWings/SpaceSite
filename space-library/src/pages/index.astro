@@ -1,0 +1,39 @@
+---
+import Hero from "../components/Hero.astro";
+import FeaturedPosts from "../components/FeaturedPosts.astro";
+import MainFocusSlider from "../components/MainFocusSlider.astro";
+import SubstackPreview from "../components/SubstackPreview.astro";
+---
+
+<!-- This becomes the page body content -->
+<header>
+<link rel="stylesheet" href="/styles/global.css" />
+
+  <a id="logo_link" href="/">
+    <img class="logo" src="/images/space_rd.jpg" alt="Cosmos Library Logo" />
+  </a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/library">Library</a>
+    <a href="/about">About Me</a>
+  </nav>
+</header>
+
+<Hero />
+
+<FeaturedPosts />
+
+<MainFocusSlider />
+
+<SubstackPreview />
+
+<footer>
+  <p>&copy; 2025 The Cosmos Library – Nathanael King</p>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/library">Library</a>
+    <a href="/about">About Me</a>
+    <a href="/site-plan-space">Site Plan</a>
+  </nav>
+</footer>
