@@ -1,0 +1,14 @@
+footer {
+  background: var(--nav-hover-background-color);
+  text-align: center;
+  padding: 1em;
+  color: var(--text-muted);
+}
+footer nav a {
+  color: var(--text-muted);
+  margin: 0 1em;
+  text-decoration: none;
+}
+footer nav a:hover {
+  color: var(--text-light);
+}/*# sourceMappingURL=home.css.map */

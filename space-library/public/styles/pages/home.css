@@ -1,0 +1,126 @@
+body {
+  background-color: var(--bg);
+  color: var(--text-light);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: #121232;
+  border-bottom: 2px solid var(--primary);
+}
+header nav a {
+  color: var(--text-light);
+  margin-left: 1em;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: var(--accent);
+}
+header .logo {
+  height: 60px;
+  border-radius: 10px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3em 1em;
+  background: url("../images/nightSky.jpg") no-repeat center center/cover;
+}
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.3em;
+  color: var(--primary);
+}
+#hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  color: var(--text-light);
+}
+#hero .hero-buttons {
+  display: flex;
+  gap: 1em;
+}
+#hero .hero-buttons a {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#hero .hero-buttons a:hover {
+  background: var(--primary);
+  color: var(--text-light);
+}
+
+.section-preview {
+  padding: 2em;
+  text-align: center;
+}
+.section-preview h2 {
+  color: var(--primary);
+  margin-bottom: 1em;
+}
+.section-preview .post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5em;
+}
+.section-preview .post-grid .post-card {
+  background: #1a1b3c;
+  padding: 1em;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.section-preview .post-grid .post-card:hover {
+  transform: scale(1.03);
+}
+.section-preview .post-grid .post-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.section-preview .post-grid .post-card h3 {
+  margin-top: 0.75em;
+  color: var(--accent);
+}
+
+.main-focus {
+  background: #101025;
+  padding: 3em 1.5em;
+}
+.main-focus h2 {
+  text-align: center;
+  color: var(--primary);
+}
+.main-focus .focus-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1.5em;
+}
+.main-focus .focus-content img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+.main-focus .focus-content .focus-description {
+  max-width: 500px;
+}
+.main-focus .focus-content .focus-description p {
+  line-height: 1.5;
+}
+.main-focus .focus-content .focus-description a {
+  color: var(--accent);
+  font-weight: bold;
+}
+

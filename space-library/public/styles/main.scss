@@ -1,0 +1,23 @@
+// styles/main.scss
+
+// Base
+@import 'base/variables';
+@import 'base/typography';
+@import 'base/reset';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/responsive';
+@import 'layout/buttons';
+
+// Sections
+@import 'sections/hero';
+@import 'sections/posts';
+@import 'sections/focus';
+
+// Page-specific
+@import 'pages/home';
+@import 'pages/blog';
+@import 'pages/library';
+@import 'pages/aboutus';

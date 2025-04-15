@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: #121232;
+    border-bottom: 2px solid var(--primary);
+  
+    nav a {
+      color: var(--text-light);
+      margin-left: 1em;
+      text-decoration: none;
+  
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  
+    .logo {
+      height: 60px;
+      border-radius: 10px;
+    }
+  }
+  

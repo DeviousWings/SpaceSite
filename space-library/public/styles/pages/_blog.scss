@@ -1,0 +1,31 @@
+#blog-feed {
+    padding: 2em;
+  
+    h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1em;
+    }
+  
+    .blog-post {
+      background: #1a1b3c;
+      padding: 1.5em;
+      margin-bottom: 1.5em;
+      border-radius: 10px;
+      color: var(--text-light);
+  
+      h3 a {
+        color: var(--accent);
+        text-decoration: none;
+  
+        &:hover {
+          color: var(--primary);
+        }
+      }
+  
+      p {
+        margin: 0.5em 0;
+      }
+    }
+  }
+  
