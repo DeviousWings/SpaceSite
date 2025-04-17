@@ -1,34 +1,23 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import FeaturedPosts from "../components/FeaturedPosts.astro";
 import MainFocusSlider from "../components/MainFocusSlider.astro";
 import SubstackPreview from "../components/SubstackPreview.astro";
-import Footer from "../components/Footer.astro";
 ---
 
-<!-- This becomes the page body content -->
-<header>
-<link rel="stylesheet" href="/styles/main.css" />
+<Layout title="Home | The Cosmos Library">
+  <Hero />
 
-  <a id="logo_link" href="/">
-    <img class="logo" src="/images/space_rd.jpg" alt="Cosmos Library Logo" />
-  </a>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/blog">Blog</a>
-    <a href="/library">Library</a>
-    <a href="/about">About Me</a>
-  </nav>
-</header>
+  <section class="featured-posts">
+    <FeaturedPosts />
+  </section>
 
-<Hero />
+  <section class="main-focus">
+    <MainFocusSlider />
+  </section>
 
-<FeaturedPosts />
-
-<MainFocusSlider />
-
-<SubstackPreview />
-
-<Footer />
-
-
+  <section class="substack-preview">
+    <SubstackPreview />
+  </section>
+</Layout>

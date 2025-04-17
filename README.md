@@ -23,6 +23,7 @@ Welcome to the official development roadmap for **The Cosmos Library**, a person
 - [x] Add JavaScript for dynamic content injection
 - [x] Setup continuous deployment via GitHub → Netlify
 - [] Music in the background?
+- [] Fix Sapce Library
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)](https://app.netlify.com/sites/YOUR_SITE_NAME/deploys)
 

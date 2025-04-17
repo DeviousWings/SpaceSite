@@ -1,0 +1,76 @@
+Yes — you can absolutely **copy content from Substack** and repost it on your own custom blog. There are two main ways to do it:
+
+---
+
+## ✅ Option 1: **Manual Copy-Paste & Format**
+This is the simplest method:
+
+1. **Write or publish** on Substack as normal.
+2. **Copy the content** from the Substack editor or published post.
+3. **Paste into your own Markdown file** (if you’re using Astro + Markdown), or into your CMS/database.
+4. **Adjust formatting** (headings, links, images, embeds) as needed.
+
+🟡 Good for low volume  
+🟢 Keeps full control  
+🔴 Takes time per post
+
+---
+
+## ✅ Option 2: **Automated Substack RSS Import**
+Substack provides an **RSS feed** for your publication. You can use that to **automatically fetch your posts** and display them on your site.
+
+### 🔧 How It Works:
+- Substack RSS feed:  
+  `https://your-substack-name.substack.com/feed`
+
+### 🚀 In Astro, you could:
+1. Fetch the RSS feed inside a `getSubstackPosts.js` utility:
+   ```js
+   import Parser from 'rss-parser';
+   const parser = new Parser();
+
+   export default async function getSubstackPosts() {
+     const feed = await parser.parseURL('https://your-substack-name.substack.com/feed');
+     return feed.items.map(item => ({
+       title: item.title,
+       link: item.link,
+       date: item.pubDate,
+       content: item.content, // HTML string
+     }));
+   }
+   ```
+
+2. Render it inside your blog page or a `SubstackPosts.astro` component:
+   ```astro
+   ---
+   import getSubstackPosts from '../utils/getSubstackPosts';
+   const posts = await getSubstackPosts();
+   ---
+
+   <section>
+     {posts.map(post => (
+       <article>
+         <h2><a href={post.link}>{post.title}</a></h2>
+         <div innerHTML={post.content}></div>
+         <small>{new Date(post.date).toDateString()}</small>
+       </article>
+     ))}
+   </section>
+   ```
+
+🟢 **Pro**: Keeps your site up to date  
+🔴 **Con**: You’re still linking to Substack unless you parse and rehost the HTML
+
+---
+
+## ✅ Bonus Option: Substack → Markdown Automation
+If you're comfortable with scripting, you could:
+- Pull your Substack RSS feed
+- Convert the HTML content into Markdown
+- Save it as `.md` files for your Astro blog
+
+This would give you **local backup + full control**.
+
+---
+
+Want me to build a working example of one of these for your site?

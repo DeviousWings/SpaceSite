@@ -100,25 +100,38 @@ a {
   color: inherit;
 }
 
-header {
+.site-header {
+  background: var(--bg);
+  border-bottom: 2px solid var(--primary);
+  padding: 1em 2em;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
-  background: #121232;
-  border-bottom: 2px solid var(--primary);
+  flex-wrap: wrap;
 }
-header nav a {
-  color: var(--text-light);
-  margin-left: 1em;
-  text-decoration: none;
-}
-header nav a:hover {
-  color: var(--accent);
-}
-header .logo {
+
+.logo img {
   height: 60px;
   border-radius: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links li a:hover {
+  color: var(--accent);
 }
 
 footer {
@@ -263,6 +276,33 @@ footer nav a:hover {
 #hero .hero-buttons a:hover {
   background: var(--primary);
   color: var(--text-light);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.blog-card {
+  padding: 1.5rem;
+  background-color: #1b1b2f;
+  border-radius: 12px;
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+  background-color: #29294d;
+}
+.blog-card h2 {
+  margin-top: 0;
+  color: var(--accent1-color);
+}
+.blog-card p {
+  margin: 0.5rem 0 1rem;
 }
 
 .main-focus-slider {
