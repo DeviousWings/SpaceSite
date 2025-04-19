@@ -1,49 +1,54 @@
-/* styles/base/_typography.scss */
-
 body {
-    font-family: var(--font-main);
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--paragraph-color-on-color);
-    background-color: var(--bg);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  background-color: var(--bg);
+}
+
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  color: var(--headline-color-on-color);
+  margin: 1.5rem 0 1rem;
+  line-height: 1.2;
+}
+
+// Specific heading sizes
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.875rem;
+}
+
+// Paragraphs
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--paragraph-color-on-color);
+}
+
+// Links
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--primary);
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--headline-color-on-color);
-    font-weight: 700;
-    line-height: 1.2;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-top: 1.5em;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-    margin-top: 1.25em;
-  }
-  
-  p {
-    font-size: 1rem;
-    color: var(--paragraph-color-on-color);
-    margin-bottom: 1em;
-  }
-  
-  a {
-    color: var(--accent);
-    transition: 0.3s ease;
-  
-    &:hover {
-      color: var(--primary);
-    }
-  }
-  
-  strong {
-    font-weight: 600;
-  }
-  
+}

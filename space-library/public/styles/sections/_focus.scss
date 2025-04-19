@@ -1,64 +1,73 @@
 .main-focus-slider {
-    padding: 3em 1.5em;
-    text-align: center;
-    background: #101025;
-  
-    h2 {
-      color: var(--primary);
-      margin-bottom: 1.5em;
-    }
-  
-    .slider {
-      position: relative;
-      max-width: 800px;
-      margin: 0 auto;
-      overflow: hidden;
-  
-      .slide {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-  
-        img {
-          max-width: 100%;
-          border-radius: 12px;
-          margin-bottom: 1em;
-        }
-  
-        h3 {
-          color: var(--accent);
-          font-size: 1.5rem;
-          margin-bottom: 0.5em;
-        }
-  
-        p {
-          color: var(--text-muted);
-          font-size: 1rem;
-        }
-  
-        &.active {
-          display: flex;
-        }
+  padding: 3rem 2rem;
+  background-color: var(--bg);
+  color: var(--text-light);
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 2rem;
+  }
+
+  .slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    gap: 2rem;
+
+    .slide {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--paragraph-background-color);
+      padding: 5rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 5rem;
       }
-    }
-  
-    .slide-controls {
-      margin-top: 1em;
-  
-      button {
-        background: var(--accent);
-        border: none;
-        padding: 0.5em 1em;
-        margin: 0 0.5em;
-        font-size: 1.2rem;
-        cursor: pointer;
-        border-radius: 8px;
-  
-        &:hover {
-          background: var(--primary);
-          color: var(--text-light);
-        }
+
+      h3 {
+        font-size: 1.25rem;
+        color: var(--accent);
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: var(--text-muted);
+      }
+
+      &.active {
+        display: flex;
       }
     }
   }
-  
+
+  .slide-controls {
+    margin-top: 2rem;
+
+    button {
+      background: none;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      font-size: 1.25rem;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: var(--accent);
+        color: var(--bg);
+      }
+    }
+  }
+}

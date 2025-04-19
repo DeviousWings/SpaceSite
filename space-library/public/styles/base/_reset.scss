@@ -1,37 +1,12 @@
-/* styles/base/_reset.scss */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html,
 body {
-  height: 100%;
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--text-light);
+  line-height: 1.6;
 }
