@@ -1,0 +1,3 @@
+[submodule "cosmossite/CosmosSite"]
+	path = cosmossite/CosmosSite
+	url = https://github.com/DeviousWings/CosmosSite.git
