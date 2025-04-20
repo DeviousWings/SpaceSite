@@ -87,6 +87,7 @@ body {
   background-color: var(--nav-background-color);
   border-bottom: 2px solid var(--primary);
   padding: 1rem 2rem;
+  font-family: var(--font-main);
 }
 
 .navbar {
@@ -123,6 +124,18 @@ footer {
   padding: 1em;
   color: var(--text-muted);
   font-family: var(--font-main);
+}
+
+.btn-coffee {
+  background: var(--accent);
+  color: var(--headline-color-on-white);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  margin-bottom: 2rem;
+  display: inline-block;
+  cursor: pointer;
 }
 
 footer nav a {
@@ -384,4 +397,50 @@ body {
   .blog-section .blog-card {
     padding: 1rem;
   }
+}
+.library-section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.library-section h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.library-section p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+.library-section .library-content {
+  background-color: var(--paragraph-background-color);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.about-section {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-section h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.about-section p {
+  color: var(--paragraph-color-on-color);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+.about-section .about-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+.about-section .about-highlights ul li {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: var(--text-light);
 }/*# sourceMappingURL=main.css.map */
